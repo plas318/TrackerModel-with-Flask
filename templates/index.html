@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}">
+
+    <title>TrCize</title>
+</head>
+
+
+
+
+<body id="home">
+
+    <!--Logo and Site Welcome-->
+
+    <nav>
+        <div class="navbar">
+            <ul id="nav">
+                <li class="nav menu menu1"><a href="#home">홈페이지</a></li>
+                <li class="nav menu menu2"><a href="#apply">안내</a></li>
+                <li class="nav menu menu3"><a href="#create">입력</a></li>
+                <li class="nav menu menu4"><a href="#result">결과</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <main>
+        <header>
+            <!--The first header/ The first picture/ or main logo design-->
+        </header>
+
+        <div class="blank">
+
+        </div>
+
+        <div class="head-title">
+            <h3 class="logo-title">소이산 커스텀 트래커</h3>
+        </div>
+
+        <div class="head-logo">
+            <!-- <img id="mountain" class="mountain img" src="styles/images/main.jpg"> -->
+            <!-- <img id="logo" class="logo img" src="styles/images/logo.jpg"> -->
+            <div id="apply" class="trekk">
+                <p class="trekk-pic"></p>
+                <p class="trekk-txt"><span class="green" style="font-size:3em;">소</span>이산(所伊山)은 강원도 철원군 철원읍 사요리에 있는 해발고도 362m의 산이다. 
+                <br>고려 시대부터 외적의 출연을 알리던 제1로 봉수대가 있는 공간으로, 해방 이전 철원 역사의 중심이다. 
+                <br>고도는 높지 않아도 소이산 정상에 서면 백마고지, 철원역, 제2땅굴, 노동당사 등이 한눈에 들어온다.</p>
+            </div>
+            <div class="main-pointers">
+                <div class="point">
+
+                </div>
+                <div class="point">
+
+                </div>
+                <div class="point">
+
+                </div>
+            </div>
+
+        </div>
+        <h5 class="welcome txt"><span class="green" style="font-size:larger;">나</span>만 알고싶은 트래킹 코스</h5>
+        <h5 class="welcome2 txt"><span class="green">커스텀 트래커</span>로 쉽게 추천</span>받아보세요!</h5>
+
+
+        <div class="head-title">
+            <div class="arrow-container">
+                <a class="arrow arrow-down" title="Next" href="javascript:;"></a>
+                <a class="arrow2 arrow-down" title="Next2" href="javascript:;"></a>
+            </div>
+        </div>
+
+        <!--The main part-->
+
+
+        <!--The Question Form -->
+        <div id="create" class="question form">
+            <div class="question q1">
+                <p class="label txt">난이도</p>
+                <select id="difficulty">
+                    <option value="0">쉬움</option>
+                    <option value="1">어려움</option>
+                </select>
+            </div>
+
+            <div class="question q2">
+                <p class="label txt">시작점</p>
+                <select id="startingPoint">
+                    <option value="0">지뢰꽃길 서쪽입구</option>
+                    <option value="1">근대문화 공원</option>
+                    <option value="2">소이산 입구</option>
+                    </select>
+            </div>
+
+            <div class="question q3">
+                <p class="label txt">체력</p>
+                <select id="health">
+                    <option value="0">적음</option>
+                    <option value="1">많음</option>
+                </select>
+            </div>
+
+            <div class="question q4">
+                <p class="label txt">관광 유형</p>
+                <select id="tour">
+                    <option value="0">관광지 미선택</option>
+                    <option value="1">자연관광</option>
+                    <option value="2">안보관광</option>
+                    <option value="3">모든 관광지</option>
+                </select>
+            </div>
+
+            <button id="createT" value="Create Track">코스 추천</button>
+
+           
+                <div class="resultPic">
+
+                </div>
+
+                <div class="wrapper">
+                    <div class="buttonWrapper">
+                        <button class="tab-button" style="border-top-left-radius: 10px;" data-id="add-info">추가정보</button>
+                        <button class="tab-button" data-id="tour-info">관광정보</button>
+                        <button class="tab-button" style="border-top-right-radius: 10px;" data-id="extra-info">예상결과</button>
+                    </div>
+                    <div class="contentWrapper">
+                        <p class="tab-content" id="add-info">
+
+                        </p>
+                        <p class="tab-content" id="tour-info">
+
+                        </p>
+                        <p class="tab-content" id="extra-info">
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="line"></div>
+    </main>
+
+    <footer>
+        <div class="footer contact"></div>
+        <div class="footer add"></div>
+    </footer>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='./scripts/index.js') }}"></script>
+</body>
+
+</html>

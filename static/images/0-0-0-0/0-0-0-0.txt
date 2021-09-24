@@ -1,0 +1,3 @@
+0 # Tour counter
+1 # Successful Landing
+91 # Current budget
