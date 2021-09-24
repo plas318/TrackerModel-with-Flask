@@ -13,7 +13,7 @@ is a static prototype website created with html, css5, vanilla js in order to cr
 
 # 트래커모델
 
--flask 프레임워크를 기반으로한 스태틱 웹어플리케이션입니다 
+-HTML, css5, vanillaJs, flask 프레임워크를 접목시킨 스태틱 웹어플리케이션입니다 
 
 -main.py는 앱을 실행하기 위한 스크립트입니다
 
